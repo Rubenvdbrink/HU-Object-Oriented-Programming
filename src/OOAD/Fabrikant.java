@@ -12,6 +12,7 @@ public class Fabrikant {
     public static TreeMap<String, VliegtuigType> geefAlleVliegtuigTypen(){
         return VliegtuigTypen;
     }
+
     private static HashSet<Fabrikant> geefAlleFabrikanten(){
         return alleFabrikanten;
     }

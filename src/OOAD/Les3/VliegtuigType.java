@@ -1,4 +1,4 @@
-package OOAD;
+package OOAD.Les3;
 
 public class VliegtuigType {
     private String code;

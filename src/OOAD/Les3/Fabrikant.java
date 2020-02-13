@@ -1,4 +1,4 @@
-package OOAD;
+package OOAD.Les3;
 
 import java.util.HashSet;
 import java.util.TreeMap;

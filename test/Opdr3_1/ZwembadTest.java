@@ -1,5 +1,6 @@
-package Practica.Practicum2.Opdr2A;
+package Opdr3_1;
 
+import Practica.Practicum2.Opdr2A.Zwembad;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 

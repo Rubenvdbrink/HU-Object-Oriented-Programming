@@ -1,11 +1,11 @@
-package Practica.Practicum3;
+package Practica.Practicum3.Opdr3B;
 
 public class Cirkel {
     private int radius;
     private int xPositie;
     private int yPositie;
 
-    public Cirkel(int rad, int x, int y){
+    public Cirkel(int rad, int x, int y)  {
         if (rad <= 0){
             throw new IllegalArgumentException("Radius moet groter dan 0 zijn!");
         }

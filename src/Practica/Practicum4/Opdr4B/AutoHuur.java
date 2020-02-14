@@ -38,8 +38,18 @@ public class AutoHuur {
         }
 
     public String toString(){
+        if (gehuurdeAuto == null && huurder == null){return "er is geen auto bekend" +
+                "\ner is geen huurder bekend" +
+                "\naantal dagen: " + aantalDagen + " en dat kost " + totaalPrijs();}
+        if (gehuurdeAuto == null){return "er is geen auto bekend"+
+                "\nop de naam van: " + huurder +
+                "\naantal dagen: " + aantalDagen + " en dat kost " + totaalPrijs();}
+        if (huurder == null){return "autotype: " + gehuurdeAuto +
+                "\ner is geen huurder bekend" +
+                "\naantal dagen: " + aantalDagen + " en dat kost " + totaalPrijs();}
+        else{
         return "autotype: " + gehuurdeAuto +
                 "\nop de naam van: " + huurder +
-                "\naantal dagen: " + aantalDagen + " en dat kost " + totaalPrijs();
+                "\naantal dagen: " + aantalDagen + " en dat kost " + totaalPrijs();}
     }
 }

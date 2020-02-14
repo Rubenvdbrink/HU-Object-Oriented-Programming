@@ -9,6 +9,8 @@ public class Auto {
         prijsPerDag = prPd;
     }
 
+    public String getType(){ return type; }
+
     public void setPrijsPerDag(double prPd){
         prijsPerDag = prPd;
     }
@@ -16,7 +18,7 @@ public class Auto {
         return prijsPerDag;
     }
 
-    public String toString(){
+    public String toString() {
         return type + " met prijs per dag: " + prijsPerDag;
     }
 }

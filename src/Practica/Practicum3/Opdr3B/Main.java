@@ -1,4 +1,4 @@
-package Practica.Practicum3;
+package Practica.Practicum3.Opdr3B;
 
 public class Main {
     public static void main(String[] args) {

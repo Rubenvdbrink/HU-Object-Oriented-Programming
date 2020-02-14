@@ -7,6 +7,7 @@ public class Voetbalclub {
     private int aantalVerloren;
 
     public Voetbalclub (String nm){naam = nm;} //constructor
+    public Voetbalclub(){} //lege constructor
 
     public void verwerkResultaat(char ch){     //resultaat verwerken
         if (ch == 'w')
@@ -21,6 +22,7 @@ public class Voetbalclub {
     public int aantalPunten(){return aantalGewonnen*3+aantalGelijk;} // totaal punten
 
     public String toString(){
-        return naam + " " + aantalGespeeld() + " " +  aantalGewonnen + " " +  aantalGelijk + " " +  aantalVerloren + " " +  aantalPunten();
+        if(naam == null){return "FC " + aantalGespeeld() + " " +  aantalGewonnen + " " +  aantalGelijk + " " +  aantalVerloren + " " +  aantalPunten();}
+        else{return naam + " " + aantalGespeeld() + " " +  aantalGewonnen + " " +  aantalGelijk + " " +  aantalVerloren + " " +  aantalPunten();}
     }
 }

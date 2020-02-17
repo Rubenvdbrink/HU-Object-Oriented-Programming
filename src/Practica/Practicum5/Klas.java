@@ -20,6 +20,14 @@ public class Klas {
     }
 
     public void wijzigCijfer(String nm, double nweCijfer){ // WIP
+        for (int i = 0; i < deLeerlingen.size(); i++) {
+            String leerlingWijzigCijer = String.valueOf(deLeerlingen.get(i));
+            if(leerlingWijzigCijer.contains(nm)){
+                Leerling leerlingMetNieuwCijfer = new Leerling(nm);
+                deLeerlingen.set(i,leerlingMetNieuwCijfer);
+                leerlingMetNieuwCijfer.setCijfer(nweCijfer);
+            }
+        }
     }
 
     public int aantalLeerlingen(){ //telt aantal in ArrayList

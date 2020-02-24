@@ -1,4 +1,4 @@
-package Practica.Practicum6.Opdr6A;
+package Practica.Practicum6.Opdr6Av2;
 
 import java.time.LocalDate;
 

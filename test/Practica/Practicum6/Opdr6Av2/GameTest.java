@@ -1,6 +1,5 @@
-package Practica.Practicum6.Opdr6A;
+package Practica.Practicum6.Opdr6Av2;
 
-import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

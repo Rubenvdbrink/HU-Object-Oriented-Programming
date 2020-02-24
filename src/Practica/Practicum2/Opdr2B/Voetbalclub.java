@@ -1,13 +1,17 @@
 package Practica.Practicum2.Opdr2B;
 
 public class Voetbalclub {
-    private String naam;
+    private String naam = "FC";
     private int aantalGewonnen;
     private int aantalGelijk;
     private int aantalVerloren;
 
     public Voetbalclub (String nm){naam = nm;} //constructor
     public Voetbalclub(){} //lege constructor
+
+    public String getNaam(){
+        return naam;
+    }
 
     public void verwerkResultaat(char ch){     //resultaat verwerken
         if (ch == 'w')

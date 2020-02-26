@@ -1,4 +1,4 @@
-package Practica.Practicum6.Opdr6Av2;
+package Practica.Practicum6.Opdr6A_and_B;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

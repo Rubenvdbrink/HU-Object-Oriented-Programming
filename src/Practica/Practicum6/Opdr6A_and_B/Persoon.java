@@ -1,4 +1,4 @@
-package Practica.Practicum6.Opdr6Av2;
+package Practica.Practicum6.Opdr6A_and_B;
 
 import java.util.ArrayList;
 
@@ -18,6 +18,31 @@ public class Persoon {
 
     public double getBudget() {return budget;}
     public void setBudget(double budget) {this.budget = budget;}
+//
+//Practicum 6B Opdr1
+//    \/
+    public Game zoekGameOpNaam(String naam){
+        Game returnWaarde = null; //veranderd als game is gevonden
+        for(int i = 0 ; i < mijnGames.size() ; i++){
+            if(mijnGames.get(i).getNaam().equals(naam)){returnWaarde = mijnGames.get(i);}
+        }
+        System.out.println("##Practicum 6B Opdr1:##");
+        return returnWaarde;
+    }
+//
+//Practicum 6B Opdr2
+//    \/
+    public ArrayList<Game> bepaalGamesNietInBezit(ArrayList<Game> gameLijst){
+        ArrayList<Game> gameReturnLijst = new ArrayList<Game>();
+        for(int i = 0 ; i < mijnGames.size() ; i++){
+            for(int in = 0 ; in < gameLijst.size() ; in++){
+                if(!mijnGames.get(i).getNaam().equals(gameLijst.get(in).getNaam())){
+                    gameReturnLijst.add(gameLijst.get(in));}
+            }
+        }
+        System.out.println("##Practicum 6B Opdr2:##");
+        return gameReturnLijst;
+    }
 
     public boolean koop(Game g){
         boolean kanKopen = false; //blijft false tenzij:

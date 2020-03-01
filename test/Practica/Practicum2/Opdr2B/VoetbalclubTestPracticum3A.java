@@ -19,6 +19,9 @@ class VoetbalclubTestPracticum3A {
         v1.verwerkResultaat('w');
         v1.verwerkResultaat('w');
         v1.verwerkResultaat('g');
+        v1.verwerkResultaat('v');
+        v1.verwerkResultaat('v');
+        v1.verwerkResultaat('v');
         v1.verwerkResultaat('w');
         assertEquals(10,v1.aantalPunten(),"totale aantalpunten(aantalPunten()) klopt niet");
     }

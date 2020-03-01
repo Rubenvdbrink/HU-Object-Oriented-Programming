@@ -1,7 +1,8 @@
 package Les6.Opdr6_2;
 
 import java.util.Scanner;
-
+//WERKT NIET WIP
+//WERKT NIET WIP
 public class Main {
 
     public static void main(String[] arg) {

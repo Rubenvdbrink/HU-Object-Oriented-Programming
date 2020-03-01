@@ -3,7 +3,6 @@ package Practica.Practicum6.Opdr6A_and_B;
 import java.time.LocalDate;
 
 public class Game {
-
     private String naam;
     private int releaseJaar;
     private double nieuwprijs;

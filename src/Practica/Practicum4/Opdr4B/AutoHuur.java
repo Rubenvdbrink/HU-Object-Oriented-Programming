@@ -29,12 +29,11 @@ public class AutoHuur {
     }
 
     public double totaalPrijs(){
-        try {
-            return aantalDagen * gehuurdeAuto.getPrijsPerDag() * (1 - huurder.getKorting() / 100); //dag * autoprijs * 1-korting
-        }
-        catch(NullPointerException npe){
+        if(gehuurdeAuto == null || huurder == null){
             return 0.0;
         }
+        else{return aantalDagen * gehuurdeAuto.getPrijsPerDag() * (1 - huurder.getKorting() / 100); //dag * autoprijs * 1-korting
+            }
         }
 
     public String toString(){

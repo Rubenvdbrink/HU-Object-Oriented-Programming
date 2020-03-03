@@ -13,8 +13,7 @@ public class StringProcessor{
 
     public String verwerk(String input){
        for(int i = 0; i < processen.size(); i++){
-            OpmaakProces func = processen.get(i);
-            input = func.maakOp(input);
+            input = processen.get(i).maakOp(input);
        }
        return input;
     }

@@ -13,7 +13,7 @@ public class Auto extends Voertuig{
     @Override
     public double huidigeWaarde() {
         int jaarVerschil = LocalDate.now().getYear() - bouwjaar;
-        return nieuwprijs * (Math.pow(0.6,jaarVerschil));
+        return nieuwprijs * (Math.pow(0.7,jaarVerschil));
     }
 
     @Override
@@ -21,11 +21,15 @@ public class Auto extends Voertuig{
         boolean returnWaarde = false; //blijft false tenzij objects equal
         if(obj instanceof Auto){
             Auto andereAuto = (Auto) obj;
-            if(super.equals(Object obj) && this.kenteken.equals(andereAuto.kenteken)){ //WIP WIP WIP WIP WIP WIP WIP WIP
+            if(super.equals(obj) && this.kenteken.equals(andereAuto.kenteken)){
                 returnWaarde = true;
             }
         }
         return returnWaarde;
     }
 
+//    @Override
+//    public String toString(){
+//        return "fiets: " + super.toString();
+//    }
 }

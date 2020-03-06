@@ -7,6 +7,15 @@ public class BedrijfsInventaris {
     private String bedrijfsnaam;
     private double budget;
 
+    public double getBudget(){
+        return budget;
+    }
+
+    public ArrayList<Goed> getAlleGoederen(){
+        return alleGoederen;
+    }
+
+
     public BedrijfsInventaris(String bedrijfsnaam, double budget){
         this.bedrijfsnaam = bedrijfsnaam;
         this.budget = budget;
@@ -16,6 +25,7 @@ public class BedrijfsInventaris {
         if(!alleGoederen.contains(g)){
             if(budget >= g.huidigeWaarde()){
         alleGoederen.add(g);
+        budget -= g.huidigeWaarde();
             }
         }
     }
@@ -25,6 +35,6 @@ public class BedrijfsInventaris {
         for(Goed goed : alleGoederen){
             goederen.append("\n" + goed);
         }
-        return String.format("Het bedrijf %s heeft een budget van €%2f en heeft de volgende goederen: %s",bedrijfsnaam,budget,goederen);
+        return String.format("Het bedrijf %s heeft een budget van €%.2f en heeft de volgende goederen:%s",bedrijfsnaam,budget,goederen);
     }
 }

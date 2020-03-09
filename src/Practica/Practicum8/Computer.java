@@ -26,8 +26,10 @@ public class Computer implements Goed{
         boolean returnwaarde = false; //blijft false tenzij equals
         if(obj instanceof Computer){
             Computer andereComputer = (Computer) obj;
-            if(this.type.equals(andereComputer.type) && this.macAdres.equals(andereComputer.macAdres)
-                    && this.aanschafPrijs == andereComputer.aanschafPrijs && this.productieJaar == andereComputer.productieJaar){
+            if(this.type.equals(andereComputer.type)
+                    && this.macAdres.equals(andereComputer.macAdres)
+                    && this.aanschafPrijs == andereComputer.aanschafPrijs
+                    && this.productieJaar == andereComputer.productieJaar){
                 returnwaarde = true;
             }
         }
@@ -35,7 +37,7 @@ public class Computer implements Goed{
     }
 
     public String toString(){
-        int decimalen = 2;
-        return String.format("Computer: %s uit %d met Mac-Adress %s heeft een waarde van: €%s",type,productieJaar,macAdres,Utils.euroBedrag(huidigeWaarde(),decimalen));
+        int decimalen = 2; //vul hier het aantal gewenste decimalen in
+        return String.format("Computer: %s uit %d met Mac-Adress %s heeft een waarde van: €%s",type,productieJaar,macAdres, Utils_From_Prac8.euroBedrag(huidigeWaarde(),decimalen));
     }
 }

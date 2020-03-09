@@ -36,6 +36,6 @@ public class BedrijfsInventaris {
             goederen.append("\n" + goed);
         }
         int decimalen = 2;
-        return String.format("Het bedrijf %s heeft een budget van €%s en heeft de volgende goederen:%s",bedrijfsnaam,Utils.euroBedrag(budget,decimalen),goederen);
+        return String.format("Het bedrijf %s heeft een budget van €%s en heeft de volgende goederen:%s",bedrijfsnaam, Utils_From_Prac8.euroBedrag(budget,decimalen),goederen);
     }
 }

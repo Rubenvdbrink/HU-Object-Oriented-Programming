@@ -1,6 +1,6 @@
 package Practica.Practicum8;
 
-public class Utils {
+public class Utils_From_Prac8 {
 //    public static void main(String[] args) {
 //        System.out.println(Utils.euroBedrag(3.11314));
 //        System.out.println(Utils.euroBedrag(3.11314, 1));

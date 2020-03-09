@@ -24,6 +24,7 @@ public abstract class Voertuig implements Goed {
     }
 
     public String toString(){
-        return String.format("Voertuig: %s met bouwjaar %s heeft een waarde van: €%.2f", type, bouwjaar, huidigeWaarde());
+        int decimalen = 2;
+        return String.format("Voertuig: %s met bouwjaar %s heeft een waarde van: €%s", type, bouwjaar, Utils.euroBedrag(huidigeWaarde(),decimalen));
     }
 }

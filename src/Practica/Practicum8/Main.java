@@ -3,9 +3,9 @@ package Practica.Practicum8;
 public class Main {
     public static void main(String[] args) {
         BedrijfsInventaris bi1 = new BedrijfsInventaris("Ruben inc.", 100000);
-        Computer c1 = new Computer("Dell Inspiron", "1A-0F-9C-7F-5E-FE", 500, 2014);
-        Computer c1_2 = new Computer("Dell Inspiron", "1A-0F-9C-7F-5E-FE", 500, 2014);
-        Computer c2 = new Computer("Custom built", "F8-33-BA-58-24-14", 2500, 2017);
+        Computer c1 = new Computer("Dell Inspiron", "1A:0F:9C:7F:5E:FE", 500, 2014);
+        Computer c1_2 = new Computer("Dell Inspiron", "1A:0F:9C:7F:5E:FE", 500, 2014);
+        Computer c2 = new Computer("Custom built", "F8:33:BA:58:24:14", 2500, 2017);
         Auto a1 = new Auto("Peugot 207sw", 15000, 2017, "69-HUT-5");
         Auto a1_2 = new Auto("Peugot 207sw", 15000, 2017, "69-HUT-5");
         Auto a2 = new Auto("Toyota Supra", 50000, 2016, "42-BLA-0");

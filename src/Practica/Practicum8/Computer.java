@@ -35,6 +35,7 @@ public class Computer implements Goed{
     }
 
     public String toString(){
-        return String.format("Computer: %s uit %d met Mac-Adress %s heeft een waarde van: € %.2f",type,productieJaar,macAdres,huidigeWaarde());
+        int decimalen = 2;
+        return String.format("Computer: %s uit %d met Mac-Adress %s heeft een waarde van: €%s",type,productieJaar,macAdres,Utils.euroBedrag(huidigeWaarde(),decimalen));
     }
 }

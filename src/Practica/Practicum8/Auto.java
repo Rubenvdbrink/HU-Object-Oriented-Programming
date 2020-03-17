@@ -28,8 +28,4 @@ public class Auto extends Voertuig{
         return returnWaarde;
     }
 
-//    @Override
-//    public String toString(){
-//        return "fiets: " + super.toString();
-//    }
 }

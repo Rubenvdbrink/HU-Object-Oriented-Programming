@@ -33,7 +33,7 @@ public class BedrijfsInventaris {
     public String toString(){
         StringBuilder goederen = new StringBuilder();
         for(Goed goed : alleGoederen){
-            goederen.append("\n" + goed);
+            goederen.append("\n").append(goed);
         }
         int decimalen = 2;
         return String.format("Het bedrijf %s heeft een budget van €%s en heeft de volgende goederen:%s",bedrijfsnaam, Utils_From_Prac8.euroBedrag(budget,decimalen),goederen);

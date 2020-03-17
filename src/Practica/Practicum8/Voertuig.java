@@ -10,6 +10,7 @@ public abstract class Voertuig implements Goed {
         this.nieuwprijs = nieuwprijs;
         this.bouwjaar = bouwjaar;
     }
+
     public boolean equals(Object obj){
         boolean returnWaarde = false; //blijft false tenzij objecten zijn equal
         if(obj instanceof Voertuig){

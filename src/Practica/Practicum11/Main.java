@@ -56,7 +56,7 @@ public class Main {
             //vangt bron & bestemming bestanden exceptions op.
         }
         catch(Exception ee){
-            System.out.println("De ingevoerde waarde van 1 euro in dollar is niet correct!");
+            System.out.println("De ingevoerde waarde van 1 euro in dollar is niet correct geformuleerd!");
             //vangt euro waarde invoer exception op.
         }
     }
